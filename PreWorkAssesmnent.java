@@ -97,7 +97,24 @@ Scanner sc = new Scanner(System.in);
           
             //initialize the first and second value as 0,1 respectively.
 
+            int n = sc.nextInt();
            int first = 0, second = 1;
+  
+           int counter = 0;
+     
+           // Iterate till counter is N
+           while (counter < n) {
+     
+               // Print the number
+               System.out.print(first + " ");
+     
+               // Swap
+               int third = second + first;
+               first = second;
+               second = third;
+               counter = counter + 1;
+           }
+           System.out.println("\n");
 
           }
 
